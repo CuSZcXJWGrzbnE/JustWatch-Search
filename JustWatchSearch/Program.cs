@@ -9,6 +9,7 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddBlazorBootstrap();
 
+builder.Services.AddSingleton<CorsProxyState>();
 builder.Services.AddSingleton<IJustwatchApiService, JustwatchApiService>();
 builder.Services.AddSingleton<ICurrencyConverter, CurrencyConverter>();
 
